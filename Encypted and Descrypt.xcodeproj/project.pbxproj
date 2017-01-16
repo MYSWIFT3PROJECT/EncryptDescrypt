@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DC4E8AF1EECC6D9F5C611CC /* Pods_Encypted_and_Descrypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CD3F9567510EBD82D4C8C5E /* Pods_Encypted_and_Descrypt.framework */; };
 		88C134FD1E2C818200DE1659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C134FC1E2C818200DE1659 /* AppDelegate.swift */; };
 		88C134FF1E2C818200DE1659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C134FE1E2C818200DE1659 /* ViewController.swift */; };
 		88C135021E2C818200DE1659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88C135001E2C818200DE1659 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		084779FFCE7B865C7BB19B07 /* Pods-Encypted and Descrypt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Encypted and Descrypt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Encypted and Descrypt/Pods-Encypted and Descrypt.debug.xcconfig"; sourceTree = "<group>"; };
+		6CD3F9567510EBD82D4C8C5E /* Pods_Encypted_and_Descrypt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Encypted_and_Descrypt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77F0EBFCA965832EBF2D8A84 /* Pods-Encypted and Descrypt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Encypted and Descrypt.release.xcconfig"; path = "Pods/Target Support Files/Pods-Encypted and Descrypt/Pods-Encypted and Descrypt.release.xcconfig"; sourceTree = "<group>"; };
 		88C134F91E2C818200DE1659 /* Encypted and Descrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Encypted and Descrypt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88C134FC1E2C818200DE1659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88C134FE1E2C818200DE1659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DC4E8AF1EECC6D9F5C611CC /* Pods_Encypted_and_Descrypt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		675F0CABE866976AA4E0E5E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				084779FFCE7B865C7BB19B07 /* Pods-Encypted and Descrypt.debug.xcconfig */,
+				77F0EBFCA965832EBF2D8A84 /* Pods-Encypted and Descrypt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		88C134F01E2C818200DE1659 = {
 			isa = PBXGroup;
 			children = (
 				88C134FB1E2C818200DE1659 /* Encypted and Descrypt */,
 				88C134FA1E2C818200DE1659 /* Products */,
+				675F0CABE866976AA4E0E5E5 /* Pods */,
+				ADC595DB2A5D360598C4FDAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = "Encypted and Descrypt";
 			sourceTree = "<group>";
 		};
+		ADC595DB2A5D360598C4FDAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CD3F9567510EBD82D4C8C5E /* Pods_Encypted_and_Descrypt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88C1350B1E2C818200DE1659 /* Build configuration list for PBXNativeTarget "Encypted and Descrypt" */;
 			buildPhases = (
+				5CF1FC74CC764653DFCBF9D1 /* [CP] Check Pods Manifest.lock */,
 				88C134F51E2C818200DE1659 /* Sources */,
 				88C134F61E2C818200DE1659 /* Frameworks */,
 				88C134F71E2C818200DE1659 /* Resources */,
+				A6D44CD88E47C9E16AC796D6 /* [CP] Embed Pods Frameworks */,
+				3A2B1ACCB9B659DC75B77829 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A2B1ACCB9B659DC75B77829 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Encypted and Descrypt/Pods-Encypted and Descrypt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CF1FC74CC764653DFCBF9D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D44CD88E47C9E16AC796D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Encypted and Descrypt/Pods-Encypted and Descrypt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88C134F51E2C818200DE1659 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		88C1350C1E2C818200DE1659 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084779FFCE7B865C7BB19B07 /* Pods-Encypted and Descrypt.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EYADQULRBU;
@@ -272,6 +348,7 @@
 		};
 		88C1350D1E2C818200DE1659 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77F0EBFCA965832EBF2D8A84 /* Pods-Encypted and Descrypt.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EYADQULRBU;
